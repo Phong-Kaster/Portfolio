@@ -56,9 +56,9 @@
 							<article id="work">
 								<h2 class="major">Work</h2>
 								<span class="image main"><blockquote>Stay Hungry Stay Foolish - Steve Jobs</blockquote></span>
-								<p>I am a newcomer to the world of getting programming so that my experience is still limited.I have just completed my <a href="https://phong-kaster.github.io/Blog.io/">blog</a> but in a demo version and some other projects.</p>
+								<p>I am a newbie to the world of getting programming so that my experience is still limited.I have just completed my <a href="https://phong-kaster.github.io/Blog.io/"> <b>blog</b> </a> but in a demo version and some other projects.</p>
 								<p>I hope I could build up many useful application in the future and help people to find another alternative solution and make life better.</p>
-								<p>For instance,why do we find another <a href="https://github.com/Phong-Kaster/Realtime-Messenger-Application">real-time messenger application</a> to alter <a href="https://www.messenger.com/">Facebook Messenger</a>
+								<p>For instance,why do we find another <a href="https://github.com/Phong-Kaster/Realtime-Messenger-Application"><b>real-time messenger application</b></a> to alter <a href="https://www.messenger.com/">Facebook Messenger</a>
 								?If it collect our private information too much that doesn't have our permission.</p>
 								<p>I am here for that so <strong>Just do it !</strong> </p>
 							</article>
@@ -67,7 +67,7 @@
 							<article id="about">
 								<h2 class="major">About</h2>
 								<span class="image main"><blockquote>Unbowed , Unbent , Unbroken - Phong Kaster</blockquote></span>
-								<p>My name is <b>Nguyen Thanh Phong</b>.I am living in  Vietnam - one of the most beautiful friendly country in the world. I have been working to become a fresher developer & building up <a href="#work">awesome works</a>.</p>
+								<p>My name is <b>Nguyen Thanh Phong</b>.I am <b id="myAge"></b> years old & living in  Vietnam - one of the most beautiful friendly country in the world. I have been working to become a fresher developer & building up <a href="#work">awesome works</a>.</p>
 								<p>Nice to meet you who ever you are and so happy to be friend.</p>
 							</article>
 
@@ -120,6 +120,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				let today = new Date();
+				let currentYear = today.getFullYear();
+				let birthYear = 2000;
+				let myAge = currentYear - birthYear;
+				
+				document.getElementById("myAge").innerHTML = myAge;
+			</script>
 
 	</body>
 </html>
